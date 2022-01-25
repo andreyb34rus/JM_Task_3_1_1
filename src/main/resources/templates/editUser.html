@@ -16,14 +16,6 @@
     <p>
     <ul style="list-style-type:none;">
         <li th:each="checkedRole: ${allRolesList}">
-            <!--                <div th:if="${userRolesList.contains(${checkedRole})}">
-                                <input type="checkbox" name="checkboxResult" th:value="${checkedRole}" checked/>
-                                <label th:text="${checkedRole}"></label>
-                            </div>
-                            <div th:unless="${userRolesList.contains(${checkedRole})}">
-                                <input type="checkbox" name="checkboxResult" th:value="${checkedRole}"/>
-                                <label th:text="${checkedRole}"></label>
-                            </div>-->
             <input type="checkbox" name="checkboxResult" th:value="${checkedRole}" checked/>
             <label th:text="${checkedRole}"></label>
         </li>
